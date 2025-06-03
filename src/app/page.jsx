@@ -1,23 +1,38 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
   return (
     <main className="px-6 py-12 md:px-12 md:py-20 space-y-20">
-      
+
       {/* HERO */}
-      <section className="space-y-6 text-left">
-        <h1 className="text-4xl md:text-6xl font-lexend-giga uppercase leading-tight tracking-tight text-gray-300">
-          Build Muscle. <br className="hidden md:block" />
-          Command Power.
-        </h1>
-        <p className="text-xl md:text-2xl font-inter text-neutral-400 max-w-xl mx-auto md:mx-0">
-          Elite personal training for men who move with purpose.
-        </p>
-        <Link href="/contact">
-          <button className="mt-4 inline-block border border-gray-300 px-6 py-3 text-xl md:text-2xl font-lexend uppercase tracking-wide hover:bg-neutral-400 hover:text-black transition-colors">
-            Start Your Transformation
-          </button>
-        </Link>
+      <section className="relative overflow-hidden py-12 md:py-20 px-6 md:px-12">
+        {/* Background Image */}
+        <div className="absolute inset-0 -z-10 border">
+          <Image
+            src="/hero-image.png"
+            alt="Atlas Training"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+
+        {/* Content */}
+        <div className="space-y-6 text-left">
+          <h1 className="text-4xl md:text-6xl font-lexend-giga uppercase leading-tight tracking-tight text-gray-300">
+            Build Muscle. <br className="hidden md:block" />
+            Command Power.
+          </h1>
+          <p className="text-xl md:text-2xl font-inter text-neutral-400 max-w-xl mx-auto md:mx-0">
+            Elite personal training for men who move with purpose.
+          </p>
+          <Link href="/contact">
+            <button className="mt-4 inline-block border border-gray-300 px-6 py-3 text-xl md:text-2xl font-lexend uppercase tracking-wide hover:bg-neutral-400 hover:text-black transition-colors">
+              Start Your Transformation
+            </button>
+          </Link>
+        </div>
       </section>
 
       {/* INTRO */}
