@@ -6,7 +6,7 @@ export default function Home() {
       
       {/* HERO */}
       <section className="space-y-6 text-left">
-        <h1 className="text-4xl md:text-6xl font-lexend-giga uppercase leading-tight tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-lexend-giga uppercase leading-tight tracking-tight text-gray-300">
           Build Muscle. <br className="hidden md:block" />
           Command Power.
         </h1>
@@ -14,7 +14,7 @@ export default function Home() {
           Elite personal training for men who move with purpose.
         </p>
         <Link href="/contact">
-          <button className="mt-4 inline-block border border-white px-6 py-3 text-xl md:text-2xl font-lexend uppercase tracking-wide hover:bg-neutral-400 hover:text-black transition-colors">
+          <button className="mt-4 inline-block border border-gray-300 px-6 py-3 text-xl md:text-2xl font-lexend uppercase tracking-wide hover:bg-neutral-400 hover:text-black transition-colors">
             Start Your Transformation
           </button>
         </Link>
@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* INTRO */}
       <section className="space-y-4 max-w-3xl">
-        <h2 className="text-2xl md:text-3xl font-lexend font-semibold">
+        <h2 className="text-2xl md:text-3xl font-lexend font-semibold text-gray-300">
           Strength isn’t just built — it’s earned.
         </h2>
         <p className="text-lg md:text-xl font-inter text-neutral-400">
@@ -33,7 +33,7 @@ export default function Home() {
       {/* SERVICES */}
       <section className="grid gap-12 md:grid-cols-3">
         <div className="space-y-2">
-          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide">
+          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide text-gray-300">
             1:1 Personal Training
           </h3>
           <p className="text-base md:text-lg font-inter text-neutral-400">
@@ -41,7 +41,7 @@ export default function Home() {
           </p>
         </div>
         <div className="space-y-2">
-          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide">
+          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide text-gray-300">
             Online Coaching
           </h3>
           <p className="text-base md:text-lg font-inter text-neutral-400">
@@ -49,7 +49,7 @@ export default function Home() {
           </p>
         </div>
         <div className="space-y-2">
-          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide">
+          <h3 className="text-xl md:text-2xl font-lexend uppercase tracking-wide text-gray-300">
             Nutrition Guidance
           </h3>
           <p className="text-base md:text-lg font-inter text-neutral-400">

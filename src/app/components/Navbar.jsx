@@ -15,20 +15,20 @@ export default function Navbar() {
         <nav className="w-full px-6 py-4 md:px-12 flex flex-col md:flex-row md:items-center md:justify-between">
         <Link
             href="/"
-            className="text-5xl md:text-6xl font-lexend-giga uppercase tracking-tight"
+            className="text-5xl md:text-6xl font-lexend-giga uppercase tracking-tight text-gray-300"
         >
             Atlas
         </Link>
 
-        <div className="flex flex-row md:flex-row gap-2 md:gap-8 text-xl md:text-2xl font-lexend mt-4 md:mt-0">
-            <Link href="/about" className={linkClass('/about')}>
-            About
+        <div className="flex flex-row md:flex-row gap-2 md:gap-8 text-lg md:text-2xl font-lexend mt-4 md:mt-0 text-gray-300">
+            <Link href="/origins" className={linkClass('/origins')}>
+            Origins
             </Link>
-            <Link href="/services" className={linkClass('/services')}>
-            Services
+            <Link href="/coaching" className={linkClass('/coaching')}>
+            Coaching
             </Link>
-            <Link href="/contact" className={linkClass('/contact')}>
-            Contact
+            <Link href="/book" className={linkClass('/book')}>
+            Book
             </Link>
         </div>
         </nav>
