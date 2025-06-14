@@ -1,20 +1,16 @@
 export default function Origins() {
     return (
-        <main className="px-6 md:px-12 py-20">
+        <main className="px-6 md:px-12 py-20 bg-[var(--dark)] text-[var(--light)]">
         <section className="max-w-4xl mx-auto space-y-10">
-            <h1 className="text-5xl md:text-7xl font-lexend uppercase tracking-tight text-gray-300">
+            <h1 className="text-5xl md:text-7xl font-lexend uppercase tracking-tight text-[var(--light-gray)]">
             Origins
             </h1>
 
-            {/* <div className="hidden md:block absolute left-0 top-1/2 -translate-y-1/2 rotate-270 text-6xl font-lexend tracking-widest text-neutral-400">
-            ORIGINS
-            </div> */}
-
-            <p className="text-xl md:text-2xl font-lexend-giga uppercase text-neutral-400">
+            <p className="text-xl md:text-2xl font-lexend-giga uppercase text-[var(--mid-gray)]">
             Power isn’t given. It’s built.
             </p>
 
-            <div className="font-inter text-base md:text-lg leading-relaxed space-y-6 text-gray-300">
+            <div className="font-inter text-base md:text-lg leading-relaxed space-y-6 text-[var(--light-gray)]">
             <p>
                 Atlas isn’t a brand. It’s a legacy in the making.
             </p>

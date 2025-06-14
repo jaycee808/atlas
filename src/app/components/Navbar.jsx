@@ -12,15 +12,15 @@ export default function Navbar() {
         } hover:opacity-100`
 
     return (
-        <nav className="w-full px-6 py-4 md:px-12 flex flex-col md:flex-row md:items-center md:justify-between">
+        <nav className="w-full px-6 py-4 md:px-12 flex flex-col md:flex-row md:items-center md:justify-between bg-[var(--dark)] text-[var(--light-gray)]">
         <Link
             href="/"
-            className="text-5xl md:text-6xl font-lexend-giga uppercase tracking-tight text-gray-300"
+            className="text-5xl md:text-6xl font-lexend-giga uppercase tracking-tight text-[var(--light-gray)]"
         >
             Atlas
         </Link>
 
-        <div className="flex flex-row md:flex-row gap-2 md:gap-8 text-lg md:text-2xl font-lexend mt-4 md:mt-0 text-gray-300">
+        <div className="flex flex-row md:flex-row gap-2 md:gap-8 text-lg md:text-2xl font-lexend mt-4 md:mt-0">
             <Link href="/origins" className={linkClass('/origins')}>
             Origins
             </Link>
