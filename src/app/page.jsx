@@ -25,7 +25,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/atlas-hero-1.png"
+            src="/atlas-hero-image.png"
             alt="Atlas Training"
             fill
             className="object-cover"
@@ -55,61 +55,65 @@ export default function Home() {
         </div>
       </section>
 
-    {/* SERVICES SECTION */}
-    <section className="px-6 md:px-12 space-y-20">
+      {/* SERVICES SECTION */}
+      <section className="px-6 md:px-12 py-20 space-y-20">
 
-    {/* Introductory Heading + Paragraph */}
-    <div className="grid items-start">
-      <div>
-        <h2 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
-          Strength isn’t given. <br />It’s built.
-        </h2>
-      </div>
-
-      <div className="py-8">
-        <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)] leading-relaxed max-w-xl">
-          Atlas is for men who don’t follow the crowd. Our coaching is built for those who train hard, think sharp, and demand more from every rep.
-        </p>
-      </div>
-    </div>
-
-    {/* SERVICES GRID */}
-    <div className="space-y-12">
-      <h3 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
-        Services
-      </h3>
-
-      <div className="grid md:grid-cols-3 gap-10">
-        {services.map((service, i) => (
-          <div
-            key={i}
-            className="relative group"
-          >
-            {/* Number + Gray Block Wrapper */}
-            <div className="relative inline-block mb-4">
-              {/* Gold Block*/}
-              <div className="absolute top-1/2 left-2 -translate-y-1/2 w-2 h-10 bg-[var(--gold)] z-0 transform -skew-x-16" />
-
-              {/* Number */}
-              <span className="relative z-10 text-4xl font-bold font-lexend-giga text-[var(--mid-gray)] px-6">
-                {`0${i + 1}.`}
-              </span>
-            </div>
-
-
-            {/* Title + Text */}
-            <h4 className="text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide border-b border-[var(--light-gray)] pb-1">
-              {service.title}
-            </h4>
-
-            <p className="text-lg font-inter text-[var(--mid-gray)] leading-relaxed pt-2">
-              {service.desc}
+        {/* Introductory Heading + Paragraph */}
+        <div className="grid items-start">
+          <div>
+            <h2 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
+              Strength isn’t given. <br />It’s built.
+            </h2>
+          </div>
+          <div className="py-8">
+            <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)] leading-relaxed max-w-xl">
+              Atlas is for men who don’t follow the crowd. Our coaching is built for those who train hard, think sharp, and demand more from every rep.
             </p>
           </div>
-        ))}
-      </div>
-      </div>
-    </section>
+        </div>
+
+        {/* SERVICES GRID */}
+        <div className="relative space-y-16 px-4 py-12 pb-24 overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0 -z-10">
+            <img
+              src="/gym-equipment-1.png"
+              alt="Gym Equipment"
+              className="w-full h-full object-cover opacity-26"
+            />
+          </div>
+
+          {/* Heading */}
+          <h3 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
+            Services
+          </h3>
+
+          {/* Grid */}
+          <div className="grid md:grid-cols-3 gap-10 py-8">
+            {services.map((service, i) => (
+              <div key={i} className="relative group">
+
+                {/* Number + Gold Block */}
+                <div className="relative inline-block mb-4">
+                  <div className="absolute top-1/2 left-2 -translate-y-1/2 w-2 h-10 bg-[var(--gold)] z-0 transform -skew-x-16" />
+                  <span className="relative z-10 text-4xl font-bold font-lexend-giga text-[var(--mid-gray)] px-6">
+                    {`0${i + 1}.`}
+                  </span>
+                </div>
+
+                {/* Title + Text */}
+                <h4 className="text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide border-b border-[var(--light-gray)] pb-1">
+                  {service.title}
+                </h4>
+                <p className="text-lg font-inter text-[var(--mid-gray)] leading-relaxed pt-2">
+                  {service.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
     </main>
   )
 }
