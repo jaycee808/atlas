@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
-        <footer className="mt-10 px-6 py-8 md:px-12 text-sm md:text-base font-lexend uppercase tracking-wide text-[var(--light-gray)] bg-[var(--dark)]">
-        <p className="text-center md:text-left">
+        <footer className="w-full px-6 py-8 md:px-12 md:py-10 bg-[var(--dark)] text-[var(--light-gray)] font-lexend uppercase tracking-wider text-sm md:text-base">
+        <div className="text-center md:text-right">
             © {new Date().getFullYear()} Atlas. All Rights Reserved.
-        </p>
+        </div>
         </footer>
-    );
+    )
 }
