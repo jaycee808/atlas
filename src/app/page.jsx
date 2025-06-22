@@ -96,6 +96,7 @@ export default function Home() {
               </span>
             </div>
 
+
             {/* Title + Text */}
             <h4 className="text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide border-b border-[var(--light-gray)] pb-1">
               {service.title}
