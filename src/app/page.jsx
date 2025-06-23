@@ -25,7 +25,7 @@ export default function Home() {
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
-            src="/atlas-hero-image.png"
+            src="/atlas-hero-background.png"
             alt="Atlas Training"
             fill
             className="object-cover"
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
 
           <Link href="/book">
-            <button className="mt-12 border-2 border-white bg-[var(--gold)] px-10 py-5 text-base md:text-lg font-lexend uppercase tracking-wider text-[var(--dark)] hover:bg-[var(--dark)] hover:text-white hover:scale-105 transition-all duration-300">
+            <button className="mt-12 border-2 border-white bg-[var(--dark-transparent)] px-10 py-5 text-lg md:text-xl font-lexend-giga font-bold uppercase tracking-wider text-[var(--white)] hover:bg-[var(--dark)] hover:text-white hover:scale-105 transition-all duration-300">
               Let's Build.
             </button>
           </Link>

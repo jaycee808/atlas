@@ -8,6 +8,8 @@
   --light-gray: #DDE3E5;
   --mid-gray: #A1A0A0;
   --gold: #C0882C;
+  --gold-transparent: #c0872c81;
+  --dark-transparent: #0f0f0f8e;
 }
 
 @theme inline {
