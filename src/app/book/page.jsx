@@ -39,7 +39,7 @@ const bookingContent = {
 
             {/* Header Content */}
             <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 max-w-6xl text-left space-y-10">
-            <h1 className="text-6xl md:text-7xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
                 {bookingContent.heading}
             </h1>
 
@@ -76,7 +76,7 @@ const bookingContent = {
 
         {/* CTA to Contact Form */}
         <section className="mt-24 mb-16 px-6">
-            <div className="border border-[var-dark-gray] rounded-xl max-w-3xl mx-auto text-center py-12 px-6 shadow-lg">
+            <div className="border border-[var-dark-gray] max-w-3xl mx-auto text-center py-12 px-6 shadow-lg">
                 <h2 className="text-3xl md:text-4xl font-lexend text-[var-white] tracking-wide uppercase">
                 Can’t find a time?
                 </h2>
@@ -85,13 +85,12 @@ const bookingContent = {
                 </p>
                 <a
                 href="/contact"
-                className="inline-block mt-8 px-6 py-3 bg-[var(--gold)] hover:bg-[var-gold-light] text-[var-black] font-semibold font-lexend uppercase tracking-wide rounded transition duration-200"
+                className="inline-block mt-8 px-6 py-3 bg-[var(--gold-transparent)] text-[var-dark] font-semibold font-lexend uppercase tracking-wide rounded transition duration-200"
                 >
                 Contact Me
                 </a>
             </div>
         </section>
-
         </main>
     );
 }

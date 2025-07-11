@@ -13,7 +13,7 @@ export default function Navbar() {
         } hover:opacity-100`
 
     return (
-        <nav className="w-full px-6 py-4 md:px-12 flex flex-col md:flex-row md:items-center md:justify-between bg-[var(--dark)] text-[var(--light-gray)]">
+        <nav className="w-full px-6 py-4 md:px-12 flex flex-col md:flex-row md:items-center md:justify-between bg-[var(--black)] text-[var(--light-gray)]">
         <Link href="/" className="text-5xl md:text-6xl font-lexend-giga tracking-tight text-[var(--light-gray)] uppercase">
             <Image
             src="/atlas-logo.svg"
