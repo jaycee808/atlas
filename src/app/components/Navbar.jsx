@@ -25,16 +25,16 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-2 md:gap-8 text-lg md:text-2xl mt-4 md:mt-0">
-            <Link href="/origins" className={linkClass('/origins')}>
-            Origins
-            </Link>
-            <span className="text-[var(--gold)]">/</span>
             <Link href="/coaching" className={linkClass('/coaching')}>
             Coaching
             </Link>
             <span className="text-[var(--gold)]">/</span>
             <Link href="/book" className={linkClass('/book')}>
             Book
+            </Link>
+            <span className="text-[var(--gold)]">/</span>
+            <Link href="/contact" className={linkClass('/book')}>
+            Contact
             </Link>
         </div>
         </nav>

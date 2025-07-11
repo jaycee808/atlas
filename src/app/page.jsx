@@ -16,11 +16,23 @@ const services = [
   }
 ]
 
+const originsCopy = {
+  title: "Origins",
+  subheading: "Power isn’t given. It’s built.",
+  paragraphs: [
+    "Atlas is a legacy in the making.",
+    "For over a decade, I’ve trained to build not just muscle but mindset. I’ve studied what works, tested what doesn’t, and built programs that deliver raw, focused results.",
+    "I wasn’t born with this. I built it, like you will.",
+    "Atlas is for those who command power, not just chase it. If you’re ready to train with intent, you’re in the right place."
+  ],
+  quote: "You don’t inherit strength. You forge it."
+}
+
 export default function Home() {
   return (
     <main className="min-h-screen space-y-32">
 
-      {/* HERO SECTION */}
+      {/* Hero Section */}
       <section className="relative h-[80vh] w-full overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0 -z-10">
@@ -55,45 +67,56 @@ export default function Home() {
         </div>
       </section>
 
-      {/* SERVICES SECTION */}
-      <section className="px-6 md:px-12 py-20 space-y-20">
-
-        {/* Introductory Heading + Paragraph */}
-        <div className="grid items-start">
-          <div>
-            <h2 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
-              Strength isn’t given. <br />It’s built.
+      {/* Origins Story */}
+      <section className="px-6 md:px-12 py-2 md:py-6 space-y-24">
+        <div className="grid md:grid-cols-2 gap-12 items-start">
+          {/* Left Column */}
+          <div className="space-y-8">
+            <h2 className="text-5xl md:text-7xl font-lexend-giga font-bold uppercase text-[var(--gold)]">
+            {originsCopy.title}
             </h2>
-          </div>
-          <div className="py-8">
-            <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)] leading-relaxed max-w-xl">
-              Atlas is for men who don’t follow the crowd. Our coaching is built for those who train hard, think sharp, and demand more from every rep.
+            <p className="text-xl md:text-2xl font-lexend uppercase text-[var(--mid-gray)] tracking-wide">
+              {originsCopy.subheading}
             </p>
+            <div className="font-inter text-xl leading-tight space-y-6 text-[var(--light-gray)]">
+              {originsCopy.paragraphs.map((text, i) => (
+                <p key={i}>{text}</p>
+              ))}
+            </div>
           </div>
-        </div>
 
-        {/* SERVICES GRID */}
-        <div className="relative space-y-16 px-4 py-12 pb-24 overflow-hidden">
-          {/* Background Image */}
-          <div className="absolute inset-0 -z-10">
-            <img
-              src="/gym-equipment-1.png"
-              alt="Gym Equipment"
-              className="w-full h-full object-cover opacity-26"
+          {/* Right Column */}
+          <div className="w-full h-full relative">
+            <Image
+              src="/gym-scene-1.png"
+              alt="Atlas Origins"
+              width={800}
+              height={600}
+              className="object-cover w-full h-full rounded-md shadow-xl"
             />
           </div>
+        </div>
+      </section>
+      
+      {/* Services Section */}
+      <section className="px-6 md:px-12 py-6 space-y-20">
+        <div className="grid items-start">
+          <h2 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
+            Power. Precision. Purpose.
+          </h2>
+          <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)] leading-relaxed max-w-xl pt-8">
+            Atlas is for men who don’t follow the crowd. Our coaching is built for those who train hard, think sharp, and demand more from every rep.
+          </p>
+        </div>
 
-          {/* Heading */}
+        <div className="space-y-16 py-12">
           <h3 className="text-3xl md:text-5xl font-lexend-giga font-semibold uppercase text-[var(--gold)] tracking-wide">
             Services
           </h3>
 
-          {/* Grid */}
-          <div className="grid md:grid-cols-3 gap-10 py-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {services.map((service, i) => (
               <div key={i} className="relative group">
-
-                {/* Number + Gold Block */}
                 <div className="relative inline-block mb-4">
                   <div className="absolute top-1/2 left-2 -translate-y-1/2 w-2 h-10 bg-[var(--gold)] z-0 transform -skew-x-16" />
                   <span className="relative z-10 text-4xl font-bold font-lexend-giga text-[var(--mid-gray)] px-6">
@@ -101,7 +124,6 @@ export default function Home() {
                   </span>
                 </div>
 
-                {/* Title + Text */}
                 <h4 className="text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide border-b border-[var(--light-gray)] pb-1">
                   {service.title}
                 </h4>
@@ -114,6 +136,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Three Images Tiles */}
+      <section className="px-6 md:px-12 space-y-12">
+        <div className="grid md:grid-cols-3 gap-6">
+          {["/gym-equipment-1.png", "/gym-equipment-2.png", "/gym-equipment-3.png"].map((img, i) => (
+            <div key={i} className="relative group overflow-hidden rounded-md shadow-lg">
+              <Image
+                src={img}
+                alt={`Gym Scene ${i + 1}`}
+                width={500}
+                height={300}
+                className="object-cover w-full h-64 grayscale group-hover:grayscale-0 transition duration-500"
+              />
+              <div className="absolute bottom-4 left-4 text-white text-xl font-lexend-giga bg-[var(--dark-transparent)] px-3 py-1 rounded-sm">
+                {["Intensity", "Consistency", "Growth"][i]}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="text-center py-20 px-6 md:px-12 space-y-6">
+        <h2 className="text-4xl md:text-6xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
+          Ready to train with Purpose?
+        </h2>
+        <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)]">
+          Book a free intro call or claim your first session.
+        </p>
+        <Link href="/book">
+          <button className="mt-6 border-2 border-white bg-[var(--dark-transparent)] px-10 py-5 text-lg md:text-xl font-lexend-giga font-bold uppercase tracking-wider text-[var(--white)] hover:bg-[var(--dark)] hover:text-white hover:scale-105 transition-all duration-300">
+            Let's Build.
+          </button>
+        </Link>
+      </section>
     </main>
   )
 }

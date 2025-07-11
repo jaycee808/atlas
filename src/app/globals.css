@@ -5,11 +5,13 @@
 :root {
   --light: #FAFAFA;
   --dark: #0F0F0F;
-  --light-gray: #DDE3E5;
-  --mid-gray: #A1A0A0;
+  --light-gray: #E4E7EA;
+  --mid-gray: #8C8C8C;
+  --dark-gray: #2C2C2C;
   --gold: #C0882C;
-  --gold-transparent: #c0872c81;
-  --dark-transparent: #0f0f0f8e;
+  --gold-light: #EAC682;
+  --gold-transparent: rgba(192, 136, 44, 0.5);
+  --dark-transparent: rgba(15, 15, 15, 0.56);
 }
 
 @theme inline {
