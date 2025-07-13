@@ -30,7 +30,7 @@ const coachingContent = {
 
 export default function Coaching() {
     return (
-        <main className="min-h-screen bg-[var(--black)] text-[var(--white)]">
+        <main className="min-h-screen">
         
         {/* Header Section */}
         <section className="relative h-[80vh] w-full overflow-hidden">

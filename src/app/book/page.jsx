@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link'
 
 const bookingContent = {
     heading: "Book a Session",
@@ -84,12 +85,12 @@ const bookingContent = {
                 <p className="mt-4 text-lg text-[var(--mid-gray)] font-inter leading-relaxed">
                 No worries — reach out directly and we’ll work around your schedule. Whether it's questions, custom coaching, or planning your first session, I'm here to help.
                 </p>
-                <a
+                <Link
                 href="/contact"
                 className="inline-block mt-8 px-6 py-3 bg-[var(--gold-transparent)] text-[var-dark] font-semibold font-lexend uppercase tracking-wide rounded transition duration-200"
                 >
                 Contact Me
-                </a>
+                </Link>
             </div>
         </section>
         </main>
