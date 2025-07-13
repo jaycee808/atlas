@@ -43,19 +43,20 @@ const bookingContent = {
                 {bookingContent.heading}
             </h1>
 
-            <p className="text-2xl md:text-3xl font-lexend uppercase text-[var(--light-gray)] tracking-wide">
+            <p className="text-2xl md:text-3xl font-lexend uppercase text-[var(--mid-gray)] tracking-wide">
                 {bookingContent.subheading}
             </p>
 
             <div className="grid md:grid-cols-2 gap-10 max-w-5xl pt-4">
-                <p className="text-lg md:text-xl font-inter text-[var(--mid-gray)] leading-relaxed">
+                <p className="text-lg md:text-xl font-inter text-[var(--light-gray)] leading-relaxed">
                 {bookingContent.paragraphOne}
                 </p>
-                <p className="text-lg md:text-xl font-inter text-[var(--mid-gray)] leading-relaxed">
+                <p className="text-lg md:text-xl font-inter text-[var(--light-gray)] leading-relaxed">
                 {bookingContent.paragraphTwo}
                 </p>
             </div>
             </div>
+            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-[var(--dark)] z-0 pointer-events-none" />
         </section>
 
         {/* Booking Form */}

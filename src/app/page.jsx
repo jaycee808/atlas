@@ -60,12 +60,30 @@ export default function Home() {
           </button>
         </Link>
       </div>
+      <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-[var(--dark)] z-0 pointer-events-none" />
     </section>
 
-    <section className="relative w-full overflow-hidden">
+    {/* The Atlas Code Section*/}
+    <section className="bg-[var(--dark)] py-12 px-6">
+      <div className="mx-auto text-center">
+        <p className="text-xs md:text-sm uppercase tracking-widest font-lexend text-[var(--mid-gray)] mb-4">
+          The Atlas Code
+        </p>
+        <h3 className="text-xs md:text-3xl font-lexend-giga uppercase text-[var(--light-gray)] tracking-tight">
+          Intensity <span className="text-[var(--gold)]">/</span> Consistency <span className="text-[var(--gold)]">/</span> 
+          Growth
+        </h3>
+      </div>
+    </section>
 
+    {/* Section Divider */}
+    <hr className="w-24 border-t-2 border-[var(--gold)] mx-auto my-16 opacity-30" />
+
+    {/* Origins Section */}
+
+    <section className="relative w-full overflow-hidden">
       {/* Background Image Header */}
-      <div className="absolute inset-0 h-[60vh] -z-10 border-t-2 border-[var(--dark-gray)] border-b-2">
+      <div className="absolute inset-0 h-[60vh] -z-10">
         <Image
           src="/gym-scene-1.png"
           alt="Atlas Origins - Gym Scene"
@@ -80,20 +98,19 @@ export default function Home() {
         <h2 className="text-5xl md:text-7xl font-lexend-giga font-bold uppercase text-[var(--gold)]">
           {originsCopy.title}
         </h2>
-        <p className="mt-4 text-xl md:text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide">
-          {originsCopy.subheading}
-        </p>
       </div>
-
       {/* Paragraph Content */}
       <div className="relative z-10 px-6 md:px-12 py-20">
+        <h2 className="mt-4 text-xl md:text-2xl font-lexend uppercase text-[var(--mid-gray)] tracking-tight mb-12">
+          {originsCopy.subheading}
+        </h2>
         <div className="mx-auto grid md:grid-cols-3 gap-16">
           {/* Left Column */}
           <div className="space-y-4">
             <h3 className="text-2xl md:text-3xl font-lexend font-bold text-[var(--gold)]">
               {originsCopy.paragraphOneHeading}
             </h3>
-            <p className="text-lg md:text-xl font-inter leading-relaxed text-[var(--light-gray)]">
+            <p className="text-xl md:text-xl font-inter tracking-tight text-[var(--light-gray)]">
               {originsCopy.paragraphOneText}
             </p>
           </div>
@@ -103,7 +120,7 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl font-lexend font-bold text-[var(--gold)]">
               {originsCopy.paragraphTwoHeading}
             </h3>
-            <p className="text-lg md:text-xl font-inter leading-relaxed text-[var(--light-gray)]">
+            <p className="text-xl md:text-xl font-inter tracking-tight text-[var(--light-gray)]">
               {originsCopy.paragraphTwoText}
             </p>
           </div>
@@ -111,14 +128,17 @@ export default function Home() {
       </div>
     </section>
 
+    {/* Section Divider */}
+    <hr className="w-24 border-t-2 border-[var(--gold)] mx-auto my-16 opacity-30" />
+
     {/* Services Section */}
     <section className="relative w-full overflow-hidden">
 
       {/* Background Image Header */}
-      <div className="absolute inset-0 h-[60vh] -z-10 border-t-2 border-[var(--dark-gray)] border-b-2">
+      <div className="absolute inset-0 h-[60vh] -z-10">
         <Image
           src="/gym-equipment-1.png"
-          alt="Atlas Services"
+          alt="Gym Equipment"
           fill
           className="object-cover brightness-50"
           priority
@@ -130,9 +150,6 @@ export default function Home() {
         <h2 className="text-5xl md:text-7xl font-lexend-giga font-bold uppercase text-[var(--gold)]">
           Services
         </h2>
-        <p className="mt-4 text-xl md:text-2xl font-lexend uppercase text-[var(--light-gray)] tracking-wide max-w-3xl">
-          Atlas is for men who don’t follow the crowd. Our coaching is built for those who train hard, think sharp, and demand more from every rep.
-        </p>
       </div>
 
       {/* Services Content */}
@@ -151,10 +168,10 @@ export default function Home() {
                 </span>
               </div>
 
-              <h4 className="text-2xl font-lexend uppercase text-[var(--white)] tracking-wide border-b border-[var(--light-gray)] pb-1">
+              <h4 className="text-2xl font-lexend uppercase text-[var(--mid-gray)] tracking-wide pb-1">
                 {service.title}
               </h4>
-              <p className="text-lg font-inter text-[var(--mid-gray)] leading-relaxed pt-2">
+              <p className="text-xl font-inter tracking-tight text-[var(--light-gray)] leading-relaxed pt-2">
                 {service.desc}
               </p>
             </div>
@@ -168,7 +185,7 @@ export default function Home() {
       <h2 className="text-4xl md:text-6xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
           Ready to train with Purpose?
       </h2>
-      <p className="text-xl md:text-2xl font-inter text-[var(--mid-gray)]">
+      <p className="text-xl md:text-2xl font-inter tracking-tight text-[var(--mid-gray)]">
           Book a free intro call or claim your first session.
       </p>
       <Link href="/book">
