@@ -70,7 +70,7 @@ export default function Home() {
           The Atlas Code
         </p>
         <h3 className="text-xs md:text-3xl font-lexend-giga uppercase text-[var(--light-gray)] tracking-tight">
-          Intensity <span className="text-[var(--gold)]">/</span> Consistency <span className="text-[var(--gold)]">/</span> 
+          Intensity <span className="text-[var(--gold)]">/ </span> Consistency <span className="text-[var(--gold)]">/ </span> 
           Growth
         </h3>
       </div>
