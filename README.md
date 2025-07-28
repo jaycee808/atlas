@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Atlas
 
-## Getting Started
+**Forge Your Legacy**
 
-First, run the development server:
+Atlas is a website for a personal trainer who specialises in muscle-building coaching. Designed to feel hardcore yet modern, Atlas targets male bodybuilders and individuals committed to serious training. Built with Next.js, Tailwind, and Cal.com booking integration. Designed with Swiss graphic design principles in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<p align="center">
+  <img src="./public/atlas-screenshot.png" width="1000" height="auto" title="Screenshot of Atlas">
+</p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Bold, Editorial Design:** Swiss-style layouts, bold typography, and gritty visual balance
+- **Integrated Booking System:** Custom frontend powered by Cal.com
+- **Responsive Layout:** Optimised for all devices
+- **Accessible & Performant:** Clean code and semantic HTML
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧱 Built With
 
-## Learn More
+- [Next.js](https://nextjs.org/) – React Framework for fast static and server-rendered sites.
+- [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS for responsive styling.
+- [Cal.com](https://cal.com/) - Embedded calendar for bookings.
 
-To learn more about Next.js, take a look at the following resources:
+## Link to deployed site
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+[https://atlas-training.vercel.app/](https://atlas-training.vercel.app/)
