@@ -180,19 +180,39 @@ export default function Home() {
       </div>
     </section>
 
-    {/* Final CTA */}
-    <section className="text-center py-20 px-6 md:px-12 space-y-6">
-      <h2 className="text-4xl md:text-6xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
-          Ready to train with Purpose?
-      </h2>
-      <p className="text-xl md:text-2xl font-inter tracking-tight text-[var(--mid-gray)]">
+    {/* Section Divider */}
+    <hr className="w-24 border-t-2 border-[var(--gold)] mx-auto my-16 opacity-30" />
+
+    <section className="bg-[var(--dark)] text-[var(--gold)] font-lexend">
+      <div className="max-w-4xl mx-auto px-8 py-20 text-center">
+        {/* Final CTA */}
+        <h2 className="uppercase tracking-tight text-4xl md:text-6xl lg:text-7xl font-lexend-giga">
+          Ready to train with purpose?
+        </h2>
+
+        <p className="mt-6 text-[var(--light)] text-lg md:text-xl leading-snug tracking-tight font-inter max-w-2xl mx-auto">
           Book a free intro call or claim your first session.
-      </p>
-      <Link href="/book">
-          <button className="mt-6 border-2 border-[var(--white)] bg-[var(--dark-transparent)] px-10 py-5 text-lg md:text-xl font-lexend-giga font-bold uppercase tracking-wider text-[var(--white)] hover:bg-[var(--black)] hover:text-[var(--white)] hover:scale-105 transition-all duration-300">
-            Let's Build.
-          </button>
-      </Link>
+        </p>
+
+        {/* CTA - Buttons */}
+        <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
+          {/* Primary: Book */}
+          <Link
+            href="/book"
+            className="inline-flex items-center justify-center border-2 border-[var(--gold)] bg-[var(--gold)] text-[var(--dark)] px-10 py-5 uppercase tracking-widest text-base md:text-lg font-bold hover:opacity-90 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--dark)]"
+          >
+            Book Now
+          </Link>
+
+          {/* Secondary: Contact */}
+          <Link
+            href="/contact"
+            className="inline-flex items-center justify-center border-2 border-[var(--gold)] bg-transparent text-[var(--gold)] px-10 py-5 uppercase tracking-widest text-base md:text-lg font-medium hover:bg-[var(--gold)] hover:text-[var(--dark)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--gold)]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--dark)]"
+          >
+            Ask a Question
+          </Link>
+        </div>
+      </div>
     </section>
     </main>
   )
