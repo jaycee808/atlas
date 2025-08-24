@@ -12,9 +12,9 @@ Atlas is a website for a personal trainer who specialises in muscle-building coa
     <img src="https://img.shields.io/badge/Cal.com-000000?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyBmaWxsPSJ3aGl0ZSIgdmlld0JveD0iMCAwIDI0IDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik0xMiAxLjVDNi44IDAgMi41IDUuMyAyLjUgMTBTNi44IDIyIDEyIDIyYzUuMiAwIDkuNS00LjMgOS41LTkuNXMtNC4zLTkuNS05LjUtOS41em0wIDE3QzcuMSAyMC4yIDMuOCAxNi45IDMuOCAxMFM3LjEgMy44IDEyIDMuOHM4LjIgMy4zIDguMiA2LjItMy4zIDguMi04LjIgOC4yeiIvPjwvc3ZnPg==" alt="Cal.com Badge"/>
 </div>
 
-[Next.js](https://nextjs.org/) – React Framework for fast static and server-rendered sites  
-[Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS for responsive styling  
-[Cal.com](https://cal.com/) – Embedded calendar for bookings  
+[Next.js](https://nextjs.org/) – React Framework for fast static and server-rendered sites
+[Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS for responsive styling
+[Cal.com](https://cal.com/) – Embedded calendar for bookings
 
 <p align="center">
   <img src="./public/atlas-screenshot.png" width="1000" height="auto" title="Screenshot of Atlas">
