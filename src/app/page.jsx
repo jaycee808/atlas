@@ -187,7 +187,7 @@ export default function Home() {
       <div className="max-w-4xl mx-auto px-8 py-20 text-center">
         {/* Final CTA */}
         <h2 className="uppercase tracking-tight text-4xl md:text-6xl lg:text-7xl font-lexend-giga">
-          Ready to train with purpose?
+          Ready to build your legacy?
         </h2>
 
         <p className="mt-6 text-[var(--light)] text-lg md:text-xl leading-snug tracking-tight font-inter max-w-2xl mx-auto">
