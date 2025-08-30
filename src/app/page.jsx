@@ -18,12 +18,13 @@ const services = [
 
 const originsCopy = {
   title: "Origins",
-  subheading: "Where power is built.",
+  subheading: "Every Legacy Has a Beginning",
   paragraphOneHeading: "Atlas is a legacy in the making.",
-  paragraphOneText: "For over a decade, I’ve trained to build not just muscle but mindset. I’ve studied what works, tested what doesn’t, and built programs that deliver raw, focused results.",
-  paragraphTwoHeading: "I wasn’t born with this. I built it, like you will.",
-  paragraphTwoText: "Atlas is for those who command power, not just chase it. If you’re ready to train with intent, you’re in the right place.",
+  paragraphOneText: "What began as a teenage obsession turned into a competitive career on the bodybuilding stage. Years of training, setbacks, and comebacks carved more than muscle. They forged a philosophy: progress is earned, never given.",
+  paragraphTwoHeading: "Strength is both weight and responsibility.",
+  paragraphTwoText: "The name Atlas is a reminder of that truth. No gimmicks, no shortcuts. Just proven training principles, smart nutrition, and the relentless drive to push further.",
 }
+
 
 export default function Home() {
   return (

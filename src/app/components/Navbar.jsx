@@ -24,7 +24,7 @@ export default function Navbar() {
             />
         </Link>
 
-        <div className="flex gap-2 md:gap-8 text-lg md:text-2xl mt-4 md:mt-0">
+        <div className="flex gap-2 md:gap-8 text-lg md:text-2xl mt-4 md:mt-0 justify-center">
             <Link href="/coaching" className={linkClass('/coaching')}>
             Coaching
             </Link>

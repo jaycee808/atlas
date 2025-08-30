@@ -1,4 +1,5 @@
 'use client';
+
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link'
@@ -23,41 +24,49 @@ const bookingContent = {
 
     return (
         <main className="min-h-screen">
+        {/* Hero - Header */}
+        <section className="relative h-[60vh] w-full overflow-hidden">
+            <Image
+            src="/gym-equipment-1.png"
+            alt="Atlas Training"
+            fill
+            priority
+            className="object-cover brightness-50"
+            />
 
-        {/* Header */}
-        <section className="relative h-[80vh] w-full overflow-hidden">
-
-            {/* Header - Background Image */}
-            <div className="absolute inset-0 -z-10">
-                <Image
-                    src="/gym-equipment-1.png"
-                    alt="Atlas Training"
-                    fill
-                    className="object-cover brightness-50"
-                    priority
-                />
-            </div>
-
-            {/* Header Content */}
-            <div className="relative z-20 h-full flex flex-col justify-center px-6 md:px-12 max-w-6xl text-left space-y-10">
-            <h1 className="text-5xl md:text-7xl font-lexend-giga uppercase text-[var(--gold)] tracking-tight">
-                {bookingContent.heading}
-            </h1>
-
-            <p className="text-2xl md:text-3xl font-lexend uppercase text-[var(--mid-gray)] tracking-wide">
-                {bookingContent.subheading}
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-10 max-w-5xl pt-4">
-                <p className="text-lg md:text-xl font-inter text-[var(--light-gray)] leading-relaxed">
-                {bookingContent.paragraphOne}
-                </p>
-                <p className="text-lg md:text-xl font-inter text-[var(--light-gray)] leading-relaxed">
-                {bookingContent.paragraphTwo}
-                </p>
+            <div className="relative z-10 h-full">
+            <div className="mx-auto max-w-7xl h-full px-6 md:px-12 lg:px-16">
+                <div className="h-full grid grid-cols-12 items-center">
+                <div className="col-span-12 md:col-span-10 lg:col-span-8 space-y-4">
+                    <h1 className="font-lexend-giga uppercase text-[clamp(2.5rem,6vw,5rem)] leading-[0.95] tracking-tight text-[var(--gold)]">
+                    {bookingContent.heading}
+                    </h1>
+                    <p className="font-lexend uppercase text-[clamp(1rem,1.8vw,1.5rem)] tracking-wide text-[var(--mid-gray)]">
+                    {bookingContent.subheading}
+                    </p>
+                </div>
+                </div>
             </div>
             </div>
-            <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-transparent to-[var(--dark)] z-0 pointer-events-none" />
+
+            {/* Image fade */}
+            <div className="pointer-events-none absolute bottom-0 left-0 h-20 w-full bg-gradient-to-b from-transparent to-[var(--dark)]" />
+        </section>
+
+        {/* Contact Intro */}
+        <section className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16 py-14 md:py-20">
+            <div className="grid md:grid-cols-12 gap-8 md:gap-10">
+                <div className="md:col-span-10 lg:col-span-9">
+                    <div className="grid md:grid-cols-2 gap-8">
+                    <p className="font-inter text-[var(--light-gray)] text-base md:text-lg leading-relaxed">
+                        {bookingContent.paragraphOne}
+                    </p>
+                    <p className="font-inter text-[var(--light-gray)] text-base md:text-lg leading-relaxed">
+                        {bookingContent.paragraphTwo}
+                    </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         {/* Booking Form */}
