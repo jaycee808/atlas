@@ -46,6 +46,18 @@ export default function Footer() {
             <div className="mt-10 text-center md:text-right uppercase tracking-widest text-xs opacity-80 text-[var(--light-gray)]">
             © {year} Atlas. All Rights Reserved.
             </div>
+
+            {/* Blue Ink Credit*/}
+            <div className="mt-10 text-center md:text-right uppercase tracking-widest text-xs opacity-80 text-[var(--light-gray)]">
+                <Link
+                href="https://www.blueinkstudio.co.uk"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-80 transition-opacity"
+                >
+                Designed &amp; Developed by <br></br><span className="text-[var(--gold)]">Blue Ink Studio</span>
+                </Link>
+            </div>
         </div>
         </footer>
     );
