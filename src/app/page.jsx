@@ -47,7 +47,7 @@ export default function Home() {
           <h1 className="text-6xl md:text-8xl font-lexend-giga font-bold uppercase text-[var(--light-gray)] leading-[1] drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]">
             FORGE
           </h1>
-          <h2 className="absolute top-[5%] md:top-[10%] text-4xl md:text-5xl font-island-moments text-[var(--gold)] leading-none z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
+          <h2 className="absolute top-[5%] md:top-[10%] text-4xl md:text-5xl font-bold uppercase font-island-moments text-[var(--gold)] leading-none z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">
             your
           </h2>
           <h1 className="text-6xl md:text-8xl font-lexend-giga font-bold uppercase text-[var(--light-gray)] leading-[0.8] mt-2 drop-shadow-[0_2px_6px_rgba(0,0,0,0.75)]">
